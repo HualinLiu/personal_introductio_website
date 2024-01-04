@@ -31,3 +31,132 @@ li{
     padding-left: 120px;
     padding-right: 120px;
 }
+
+.flex{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.photo{
+    width:300px;
+    height:350px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.photowide{
+    width:380px;
+    height:300px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ".grid-item1 .grid-item2 .grid-item3"
+    ".grid-item4 .grid-item4 .grid-item4";
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;;
+}
+
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.title{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.grid-container2{
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ".grid-item11 .grid-item22 .grid-item33 .grid-item44"
+    ".grid-item55 .grid-item55 .grid-item55";
+    padding-top: 70px;
+    text-align: center;
+    font-size: 25px;;
+}
+
+.grid-item11{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item22{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item33{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item44{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item55{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.photo2{
+    width:300px;
+    height:350px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tbc{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height:150px;
+    padding-top: 50px;
+}
