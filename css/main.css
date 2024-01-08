@@ -81,31 +81,92 @@ li{
     margin-left: 60px;
 }
 
-  /* Create two equal columns that sits next to each other */
-  .column {
-    display:flex;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    flex: 1;
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-
-  .photogrid{
-    width:300px;
-    height:300px;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-
-  .photowidegrid{
-    width:380px;
-    height:300px;
-    margin-right: 15px;
-    margin-left: 15px;
+.grid-container{
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ".grid-item1 .grid-item2 .grid-item3"
+    ".grid-item4 .grid-item4 .grid-item4";
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;;
 }
 
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 
+.grid-item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.photowide2{
+    width:420px;
+    height:300px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 90px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: 5;
+    grid-template-rows: 5;
+    grid-template-areas: 
+    "img3 img3 img6 img6 img6"
+    "img3 img3 img6 img6 img6"
+    "img3 img3 img4 img7 .";        
+    padding-top: 150px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    justify-content: center;
+}
+ 
+.img3 { 
+    grid-area: img3; 
+    width:575px;
+    height: 865px;
+}
+.img6 { 
+    grid-area: img6;
+    width:650px;
+    height:450px;
+ }
+.img4 { 
+    grid-area: img4;
+    width:290px;
+    height:410px;
+ }
+.img7 { 
+    grid-area: img7; 
+    width:290px;
+    height:410px;
+}
+.photos{
+    height: 350px;
+    width:260px;
+    padding-left: 40px;
+    padding-top: 75px;
+}
 
