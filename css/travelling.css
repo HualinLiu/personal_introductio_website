@@ -146,6 +146,7 @@ td{
     grid-template-areas: 
     "item1 item2"
     "item3 item4";
+    gap: 3px 3px;
     width: 910px;
     align-items: center;
 }
@@ -189,4 +190,108 @@ td{
     height:300px;
     padding-right: 100px;
 }
+
+.container_9pics{
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    "item11 item12 item13"
+    "item14 item15 item16"
+    "item17 item18 item19";
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wide{
+    height:350px;
+    padding: 5px;
+    width:500px;
+}
+
+.high{
+    height:350px;
+    padding: 5px;
+    width:225px;
+}
+
+.container_korea {
+    display: grid; 
+    grid-template-columns: repeat(23, 45px);
+    grid-template-rows:repeat(13, 92px);
+    grid-template-areas: 
+      "img1  img1  img1  img1  img1 img1 img1 img2 img2 img2 img2 img2 img2 img2 img3 img3 img3 img3 img3 img3 img3 "
+      "img1  img1  img1  img1  img1 img1 img1 img2 img2 img2 img2 img2 img2 img2 img3 img3 img3 img3 img3 img3 img3 "
+      "img1  img1  img1  img1  img1 img1 img1 img2 img2 img2 img2 img2 img2 img2 img3 img3 img3 img3 img3 img3 img3 "
+      "img8  img8  img8  img8  img8 img8 img8 img5 img5 img5 img5 img5 img7 img7 img7 img7 img7 img12 img12 img12 img12 "
+      "img8  img8  img8  img8  img8 img8 img8 img5 img5 img5 img5 img5 img7 img7 img7 img7 img7 img12 img12 img12 img12 "
+      "img8  img8  img8  img8  img8 img8 img8 img5 img5 img5 img5 img5 img7 img7 img7 img7 img7 img12 img12 img12 img12 "
+      "img6  img6  img6  img6  img6 img6 img6 img6 img6 img6 img6 img6 img4 img4 img4 img4 img4 img9 img9 img9 img9 "
+      "img6  img6  img6  img6  img6 img6 img6 img6 img6 img6 img6 img6 img4 img4 img4 img4 img4 img9 img9 img9 img9 "
+      "img6  img6  img6  img6  img6 img6 img6 img6 img6 img6 img6 img6 img4 img4 img4 img4 img4 img10 img10 img10 img10 "
+      "img6  img6  img6  img6  img6 img6 img6 img6 img6 img6 img6 img6 img4 img4 img4 img4 img4 img10 img10 img10 img10 "
+      "img11 img11 img11 img11 img11 img11 img11 img13 img13 img13 img13 img13 img13 img13 img14 img14 img14 img14 img14 img14 img14 "
+      "img11 img11 img11 img11 img11 img11 img11 img13 img13 img13 img13 img13 img13 img13 img14 img14 img14 img14 img14 img14 img14 "
+      "img11 img11 img11 img11 img11 img11 img11 img13 img13 img13 img13 img13 img13 img13 img14 img14 img14 img14 img14 img14 img14 "; 
+      justify-content: center;
+      align-items: center;
+      gap:5px 5px;
+  }
+
+  .img1 { grid-area: img1; }
+  .img2 { 
+    grid-area: img2; 
+    grid-column-start: 8;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    }
+  .img3 { grid-area: img3; }
+  .img8 { grid-area: img8; }
+  .img5 { grid-area: img5; }
+  .img12 { grid-area: img12; }
+  .img7 { grid-area: img7; }
+  .img6 { grid-area: img6; }
+  .img4 { grid-area: img4; }
+  .img9 { grid-area: img9; }
+  .img10 { grid-area: img10; }
+  .img11 { grid-area: img11; }
+  .img13 { grid-area: img13; }
+  .img14 { grid-area: img14; }
+
+  .img1, .img2, .img3, .img8, .img11, .img13, .img14{
+    width:315px;
+    height:275px;
+  }
+
+  .img5{
+    width:225px;
+    height:276px;
+  }
+
+  .img12{
+    width:198px;
+    height:276px;
+  }
+
+  .img6{
+    width:540px;
+    height:368px;
+  }
+
+  .img4{
+    width:222px;
+    height:368px;
+  }
+
+  .img9, .img10{
+    width:207px;
+    height:185px;
+  }
+
+  .img7{
+    width:222px;
+    height:275px;
+  }
 
